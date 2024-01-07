@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> {{ title }} </title>
+  <link rel="stylesheet"  href="{{ url_for('static' , filename = 'css/main.css') }}" />
+  <link rel="stylesheet"  href="{{ url_for('static' , filename = 'css/master.css') }}" />
+  {% if custom_css %}
+  <link rel="stylesheet"  href="{{ url_for('static' , filename = 'css/' + custom_css + '.css') }}" />
+  {% endif %}
+</head>
+<!--
+  here at the body we put this block of code to make flexible changing on html pages
+  by put this line of code llookk at first line of  at the hoome  html page will extend 
+  from base html file
+-->
+<body>
+ <!--{% if custom_css %}
+    <div>custom_css</div>
+  {% endif %} -->
+
+
+  {% block body %}
+  {% endblock %}
+  <script src="{{ url_for('static' , filename = 'Js/jquery-3.7.1.min.js') }}"></script>
+  <script src="{{ url_for('static' , filename = 'Js/main.js') }}"></script>
+
+</body>
+</html>
