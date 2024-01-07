@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(111, 218, 184);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-head , .desc {
+  text-align: center;
+}
+
+.page-head {
+  font-size: 40px;
+  margin: 20px 0 0;
+}
+
+.desc {
+  font-size: 25px;
+  margin: 10px 0 40px;
+}
